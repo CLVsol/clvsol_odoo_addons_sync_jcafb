@@ -12,7 +12,7 @@
     'website': 'https://github.com/CLVsol',
     'depends': [
         'base',
-        'l10n_br_base',
+        'clv_l10n_br_base',
         'clv_external_sync',
     ],
     'data': [
