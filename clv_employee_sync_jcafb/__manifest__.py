@@ -17,6 +17,7 @@
     'data': [
         'data/hr_department_sync.xml',
         'data/hr_job_sync.xml',
+        'data/hr_employee_rec.xml',
         'data/hr_employee_sync.xml',
     ],
     'demo': [],
