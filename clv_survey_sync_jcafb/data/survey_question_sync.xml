@@ -12,9 +12,9 @@
 		<field name="external_disable_check_missing" eval="True"/>
 	</record>
 	 
-	<record id="survey_question_survey_question_template_object_field_question" model="clv.external_sync.object_field">
+	<record id="survey_question_survey_question_template_object_field_title" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;question&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;question&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;title&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_question_survey_question_template"/>
 		<field name="sequence" eval="10"/>
@@ -36,17 +36,17 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="survey_question_survey_question_template_object_field_type" model="clv.external_sync.object_field">
+	<record id="survey_question_survey_question_template_object_field_question_type" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;type&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;type&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;question_type&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_question_survey_question_template"/>
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="survey_question_survey_question_template_object_field_page_id" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;page_id&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;page_id&quot;&quot;&quot;"/>
+	<record id="survey_question_survey_question_template_object_field_survey_id" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;survey_id&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;survey_id&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_question_survey_question_template"/>
 		<field name="sequence" eval="10"/>

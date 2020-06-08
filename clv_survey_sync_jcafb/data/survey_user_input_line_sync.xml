@@ -12,13 +12,13 @@
 		<field name="external_disable_check_missing" eval="True"/>
 	</record>
 	 
-	<record id="survey_user_input_line_survey_user_input_line_template_object_field_date_create" model="clv.external_sync.object_field">
+	<!--record id="survey_user_input_line_survey_user_input_line_template_object_field_date_create" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;date_create&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;date_create&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_user_input_line_survey_user_input_line_template"/>
 		<field name="sequence" eval="10"/>
-	</record>
+	</record-->
 	 
 	<record id="survey_user_input_line_survey_user_input_line_template_object_field_user_input_id" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;user_input_id&quot;&quot;&quot;"/>
@@ -108,13 +108,13 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="survey_user_input_line_survey_user_input_line_template_object_field_quizz_mark" model="clv.external_sync.object_field">
+	<!--record id="survey_user_input_line_survey_user_input_line_template_object_field_quizz_mark" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;quizz_mark&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;quizz_mark&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_user_input_line_survey_user_input_line_template"/>
 		<field name="sequence" eval="10"/>
-	</record>
+	</record-->
 	 
 	<record id="survey_user_input_line_survey_user_input_line_schedule" model="clv.external_sync.schedule">
 		<field name="name" eval="&quot;&quot;&quot;survey.user_input_line (survey.user_input_line)&quot;&quot;&quot;"/>

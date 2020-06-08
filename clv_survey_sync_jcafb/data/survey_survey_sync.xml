@@ -28,21 +28,21 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="survey_survey_survey_survey_template_object_field_stage_id" model="clv.external_sync.object_field">
+	<!--record id="survey_survey_survey_survey_template_object_field_stage_id" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;stage_id&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;stage_id&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_survey_survey_survey_template"/>
 		<field name="sequence" eval="10"/>
-	</record>
+	</record-->
 	 
-	<record id="survey_survey_survey_survey_template_object_field_auth_required" model="clv.external_sync.object_field">
+	<!--record id="survey_survey_survey_survey_template_object_field_auth_required" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;auth_required&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;auth_required&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_survey_survey_survey_template"/>
 		<field name="sequence" eval="10"/>
-	</record>
+	</record-->
 	 
 	<record id="survey_survey_survey_survey_template_object_field_users_can_go_back" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;users_can_go_back&quot;&quot;&quot;"/>
