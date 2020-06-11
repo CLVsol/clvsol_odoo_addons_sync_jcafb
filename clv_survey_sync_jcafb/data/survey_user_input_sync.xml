@@ -84,13 +84,13 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<!--record id="survey_user_input_survey_user_input_template_object_field_last_displayed_page_id" model="clv.external_sync.object_field">
+	<record id="survey_user_input_survey_user_input_template_object_field_last_displayed_page_id" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;last_displayed_page_id&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;last_displayed_page_id&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_user_input_survey_user_input_template"/>
 		<field name="sequence" eval="10"/>
-	</record-->
+	</record>
 	 
 	<record id="survey_user_input_survey_user_input_template_object_field_state_2" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;state_2&quot;&quot;&quot;"/>

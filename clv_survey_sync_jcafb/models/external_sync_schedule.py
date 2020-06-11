@@ -35,7 +35,8 @@ class ExternalSync(models.Model):
         for survey in surveys:
             object_count += 1
             values = {}
-            values['state'] = 'closed'
+            values['state'] = 'open'
+            values['questions_layout'] = 'page_per_section'
             survey.write(values)
             _logger.info(u'%s %s %s', '>>>>>>>>>> survey.title: ', object_count, survey.title)
 
@@ -283,6 +284,72 @@ class ExternalSync(models.Model):
             if remote_user_input[0]['last_displayed_page_id'] is not False:
                 user_input_record['last_displayed_page_id'] = question_external_sync.res_id
             user_input.write(user_input_record)
+
+        _logger.info(u'%s %s', '>>>>>>>>>> date_last_sync: ', date_last_sync)
+        _logger.info(u'%s %s', '>>>>>>>>>> Execution time: ', secondsToStr(time() - start))
+
+        schedule.date_last_sync = date_last_sync
+        schedule.external_sync_log +=  \
+            'method_args: ' + str(method_args) + '\n' + \
+            'object_count: ' + str(object_count) + '\n' + \
+            'date_last_sync: ' + str(date_last_sync) + '\n' + \
+            'Execution time: ' + str(secondsToStr(time() - start)) + '\n\n'
+
+    def _survey_user_input_line_adapt(self, schedule):
+
+        from time import time
+        start = time()
+
+        date_last_sync = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+        method_args = literal_eval(schedule.method_args)
+
+        _logger.info(u'%s %s', '>>>>>>>>>> method_args: ', method_args)
+
+        AbstractExternalSync = self.env['clv.abstract.external_sync']
+        SurveyUserInputLine = self.env['survey.user_input_line']
+        ExternalSync = self.env['clv.external_sync']
+
+        external_host = schedule.external_host_id.name
+        external_dbname = schedule.external_host_id.external_dbname
+        external_user = schedule.external_host_id.external_user
+        external_user_pw = schedule.external_host_id.external_user_pw
+
+        uid, sock, login_msg = AbstractExternalSync.external_sync_host_login(
+            external_host,
+            external_dbname,
+            external_user,
+            external_user_pw
+        )
+        schedule.external_sync_log += 'login_msg: ' + str(login_msg) + '\n\n'
+
+        user_input_lines = SurveyUserInputLine.search([])
+
+        object_count = 0
+        for user_input_line in user_input_lines:
+            object_count += 1
+            _logger.info(u'%s %s %s', '>>>>>>>>>> user_input_line.user_input_id: ',
+                         object_count, user_input_line.user_input_id)
+
+            user_input_line_external_sync = ExternalSync.search(
+                [('model', '=', 'survey.user_input_line'),
+                 ('res_id', '=', user_input_line.id)
+                 ])
+            remote_user_input_line = sock.execute(external_dbname, uid, external_user_pw,
+                                                  'survey.user_input_line', 'search_read',
+                                                  [('id', '=', user_input_line_external_sync.external_id)],
+                                                  ['user_input_id', 'question_id'])
+
+            if remote_user_input_line[0]['question_id'] is not False:
+                question_external_sync = ExternalSync.search(
+                    [('external_model', '=', 'survey.page'),
+                     ('external_id', '=', remote_user_input_line[0]['question_id'][0])
+                     ])
+
+            user_input_line_record = {}
+            if remote_user_input_line[0]['question_id'] is not False:
+                user_input_line_record['question_id'] = question_external_sync.res_id
+            user_input_line.write(user_input_line_record)
 
         _logger.info(u'%s %s', '>>>>>>>>>> date_last_sync: ', date_last_sync)
         _logger.info(u'%s %s', '>>>>>>>>>> Execution time: ', secondsToStr(time() - start))
