@@ -28,6 +28,7 @@
         'data/survey_page_sync.xml',
         # 'data/survey_page_adapt.xml',
         'data/survey_question_adapt.xml',
+        'data/survey_user_input_adapt_2.xml',
     ],
     'demo': [],
     'test': [],
