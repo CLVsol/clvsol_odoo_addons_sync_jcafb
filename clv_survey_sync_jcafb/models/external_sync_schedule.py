@@ -43,8 +43,8 @@ class ExternalSync(models.Model):
             values = {}
             values['access_token'] = access_token
             values['users_login_required'] = True
-            values['is_attempts_limited'] = True
-            values['attempts_limit'] = 5
+            values['is_attempts_limited'] = False
+            values['attempts_limit'] = False
             survey.write(values)
             _logger.info(u'%s %s %s', '>>>>>>>>>> survey.title: ', object_count, survey.title)
 
