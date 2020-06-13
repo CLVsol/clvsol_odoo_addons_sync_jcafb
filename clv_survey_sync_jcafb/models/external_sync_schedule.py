@@ -8,6 +8,8 @@ from functools import reduce
 from ast import literal_eval
 
 from odoo import models
+# from odoo.addons.http_routing.models.ir_http import slug
+from odoo.addons.http_routing.models.ir_http import slugify
 
 _logger = logging.getLogger(__name__)
 
@@ -34,9 +36,15 @@ class ExternalSync(models.Model):
         object_count = 0
         for survey in surveys:
             object_count += 1
+
+            # access_token = slug(survey)
+            access_token = slugify(survey.title or '')
+
             values = {}
-            values['state'] = 'open'
-            values['questions_layout'] = 'page_per_section'
+            values['access_token'] = access_token
+            values['users_login_required'] = True
+            values['is_attempts_limited'] = True
+            values['attempts_limit'] = 5
             survey.write(values)
             _logger.info(u'%s %s %s', '>>>>>>>>>> survey.title: ', object_count, survey.title)
 
@@ -325,9 +333,13 @@ class ExternalSync(models.Model):
                      ('external_id', '=', remote_user_input[0]['last_displayed_page_id'][0])
                      ])
 
+            token = slugify(user_input.document_code or '')
+
             user_input_record = {}
             if remote_user_input[0]['last_displayed_page_id'] is not False:
                 user_input_record['last_displayed_page_id'] = question_external_sync.res_id
+            if token != '':
+                user_input_record['token'] = token
             user_input.write(user_input_record)
 
         _logger.info(u'%s %s', '>>>>>>>>>> date_last_sync: ', date_last_sync)

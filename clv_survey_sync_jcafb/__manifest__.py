@@ -16,7 +16,7 @@
     ],
     'data': [
         'data/survey_survey_sync.xml',
-        # 'data/survey_survey_adapt.xml',
+        'data/survey_survey_adapt.xml',
         'data/survey_question_sync.xml',
         'data/survey_label_sync.xml',
         # 'data/survey_label_adapt.xml',
