@@ -241,6 +241,83 @@ class ExternalSync(models.Model):
 
         _logger.info(u'%s %s', '>>>>>>>>>> method_args: ', method_args)
 
+        # AbstractExternalSync = self.env['clv.abstract.external_sync']
+        SurveyUserInput = self.env['survey.user_input']
+        # ExternalSync = self.env['clv.external_sync']
+        SurveyQuestion = self.env['survey.question']
+
+        # external_host = schedule.external_host_id.name
+        # external_dbname = schedule.external_host_id.external_dbname
+        # external_user = schedule.external_host_id.external_user
+        # external_user_pw = schedule.external_host_id.external_user_pw
+
+        # uid, sock, login_msg = AbstractExternalSync.external_sync_host_login(
+        #     external_host,
+        #     external_dbname,
+        #     external_user,
+        #     external_user_pw
+        # )
+        # schedule.external_sync_log += 'login_msg: ' + str(login_msg) + '\n\n'
+
+        user_inputs = SurveyUserInput.search([])
+
+        object_count = 0
+        for user_input in user_inputs:
+            object_count += 1
+            _logger.info(u'%s %s %s', '>>>>>>>>>> user_input.survey_id: ', object_count, user_input.survey_id)
+
+            # user_input_external_sync = ExternalSync.search(
+            #     [('model', '=', 'survey.user_input'),
+            #      ('res_id', '=', user_input.id)
+            #      ])
+            # remote_user_input = sock.execute(external_dbname, uid, external_user_pw,
+            #                                  'survey.user_input', 'search_read',
+            #                                  [('id', '=', user_input_external_sync.external_id)],
+            #                                  ['survey_id', 'last_displayed_page_id'])
+
+            # if remote_user_input[0]['last_displayed_page_id'] is not False:
+            #     question_external_sync = ExternalSync.search(
+            #         [('external_model', '=', 'survey.page'),
+            #          ('external_id', '=', remote_user_input[0]['last_displayed_page_id'][0])
+            #          ])
+
+            questions = SurveyQuestion.search(
+                [('survey_id', '=', user_input.survey_id.id),
+                 ('is_page', '=', False)
+                 ])
+
+            m2m_list = []
+            for question in questions:
+                m2m_list.append((4, question.id))
+            _logger.info(u'%s %s', '>>>>>>>>>>>>>>> m2m_list: ', m2m_list)
+
+            user_input_record = {}
+            # if remote_user_input[0]['last_displayed_page_id'] is not False:
+            #     user_input_record['last_displayed_page_id'] = question_external_sync.res_id
+            user_input_record['question_ids'] = m2m_list
+            user_input.write(user_input_record)
+
+        _logger.info(u'%s %s', '>>>>>>>>>> date_last_sync: ', date_last_sync)
+        _logger.info(u'%s %s', '>>>>>>>>>> Execution time: ', secondsToStr(time() - start))
+
+        schedule.date_last_sync = date_last_sync
+        schedule.external_sync_log +=  \
+            'method_args: ' + str(method_args) + '\n' + \
+            'object_count: ' + str(object_count) + '\n' + \
+            'date_last_sync: ' + str(date_last_sync) + '\n' + \
+            'Execution time: ' + str(secondsToStr(time() - start)) + '\n\n'
+
+    def _survey_user_input_adapt_2(self, schedule):
+
+        from time import time
+        start = time()
+
+        date_last_sync = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+        method_args = literal_eval(schedule.method_args)
+
+        _logger.info(u'%s %s', '>>>>>>>>>> method_args: ', method_args)
+
         AbstractExternalSync = self.env['clv.abstract.external_sync']
         SurveyUserInput = self.env['survey.user_input']
         ExternalSync = self.env['clv.external_sync']
