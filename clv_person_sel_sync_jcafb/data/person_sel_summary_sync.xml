@@ -1,0 +1,545 @@
+<?xml version="1.0" ?>
+<!-- Copyright (C) 2013-Today  Carlos Eduardo Vercelino - CLVsol
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo noupdate="0">
+ 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template" model="clv.external_sync.template">
+		<field name="name" eval="&quot;&quot;&quot;clv.person_sel.summary (clv.person_sel.summary)&quot;&quot;&quot;"/>
+		<field name="model" eval="&quot;&quot;&quot;clv.person_sel.summary&quot;&quot;&quot;"/>
+		<field name="method" eval="&quot;&quot;&quot;_object_external_sync&quot;&quot;&quot;"/>
+		<field name="external_model" eval="&quot;&quot;&quot;clv.person_sel.summary&quot;&quot;&quot;"/>
+		<field name="external_disable_check_missing" eval="True"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_name" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;name&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;name&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c001" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c001&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c001&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c002" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c002&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c002&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c003" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c003&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c003&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c004" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c004&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c004&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c005" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c005&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c005&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c006" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c006&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c006&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c007" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c007&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c007&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c008" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c008&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c008&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c009" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c009&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c009&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c010" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c010&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c010&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c011" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c011&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c011&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c012" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c012&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c012&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c013" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c013&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c013&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c014" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c014&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c014&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c015" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c015&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c015&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c016" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c016&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c016&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c017" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c017&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c017&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c018" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c018&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c018&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c019" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c019&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c019&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c020" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c020&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c020&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c021" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c021&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c021&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c022" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c022&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c022&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c023" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c023&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c023&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c024" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c024&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c024&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c025" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c025&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c025&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c026" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c026&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c026&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c027" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c027&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c027&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c028" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c028&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c028&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c029" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c029&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c029&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c030" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c030&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c030&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c031" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c031&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c031&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c032" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c032&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c032&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c033" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c033&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c033&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c034" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c034&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c034&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c035" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c035&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c035&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c036" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c036&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c036&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c037" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c037&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c037&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c038" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c038&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c038&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c039" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c039&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c039&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c040" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c040&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c040&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c041" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c041&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c041&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c042" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c042&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c042&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c043" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c043&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c043&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c044" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c044&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c044&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c045" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c045&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c045&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c046" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c046&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c046&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c047" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c047&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c047&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c048" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c048&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c048&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c049" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c049&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c049&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c050" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c050&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c050&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c051" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c051&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c051&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c052" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c052&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c052&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c053" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c053&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c053&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c054" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c054&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c054&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c055" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c055&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c055&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c056" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c056&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c056&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c057" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c057&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c057&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c058" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c058&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c058&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c059" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c059&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c059&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c060" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c060&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c060&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c061" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c061&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c061&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c062" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c062&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c062&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c063" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c063&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c063&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_template_object_field_c064" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;c064&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;c064&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_sel_summary_clv_person_sel_summary_schedule" model="clv.external_sync.schedule">
+		<field name="name" eval="&quot;&quot;&quot;clv.person_sel.summary (clv.person_sel.summary)&quot;&quot;&quot;"/>
+		<field name="template_id" eval="clv_person_sel_summary_clv_person_sel_summary_template"/>
+	</record>
+	 
+	<record id="clv_external_sync_batch_member_clv_person_sel_summary" model="clv.external_sync.batch.member">
+		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default"/>
+		<field name="ref_id" ref="clv_person_sel_summary_clv_person_sel_summary_schedule"/>
+	</record>
+	 
+</odoo>
