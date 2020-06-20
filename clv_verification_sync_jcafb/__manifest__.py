@@ -15,6 +15,7 @@
         'clv_external_sync',
     ],
     'data': [
+        'data/partner_entity_street_pattern_sync.xml',
         'data/verification_marker_sync.xml',
     ],
     'demo': [],
