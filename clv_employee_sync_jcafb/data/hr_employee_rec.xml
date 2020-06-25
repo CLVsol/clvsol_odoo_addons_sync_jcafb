@@ -9,13 +9,21 @@
 		<field name="model" eval="&quot;&quot;&quot;hr.employee&quot;&quot;&quot;"/>
 		<field name="method" eval="&quot;&quot;&quot;_object_external_recognize&quot;&quot;&quot;"/>
 		<field name="external_model" eval="&quot;&quot;&quot;hr.employee&quot;&quot;&quot;"/>
-		<field name="external_disable_check_missing" eval="True"/>
+		<field name="disable_check_missing" eval="True"/>
 	</record>
 	 
 	<record id="hr_employee_hr_employee_rec_template_object_field_name" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;name&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;name&quot;&quot;&quot;"/>
+		<field name="inclusion" eval="True"/>
 		<field name="identification" eval="True"/>
+		<field name="template_id" eval="hr_employee_hr_employee_rec_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="hr_employee_hr_employee_rec_template_object_field_active_log" model="clv.external_sync.object_field">
+		<field name="local_object_field" eval="&quot;&quot;&quot;active_log&quot;&quot;&quot;"/>
+		<field name="adaptation" eval="True"/>
 		<field name="template_id" eval="hr_employee_hr_employee_rec_template"/>
 		<field name="sequence" eval="10"/>
 	</record>
