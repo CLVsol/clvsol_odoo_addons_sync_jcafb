@@ -27,7 +27,7 @@ class ExternalSync(models.Model):
         from time import time
         start = time()
 
-        if (not schedule.external_disable_sync):
+        if (not schedule.disable_sync):
 
             date_last_sync = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
@@ -54,7 +54,7 @@ class ExternalSync(models.Model):
             _logger.info(u'%s %s', '>>>>>>>>>> Execution time: ', secondsToStr(time() - start))
 
             schedule.date_last_sync = date_last_sync
-            schedule.external_sync_log +=  \
+            schedule.sync_log +=  \
                 'method_args: ' + str(method_args) + '\n' + \
                 'object_count: ' + str(object_count) + '\n' + \
                 'date_last_sync: ' + str(date_last_sync) + '\n' + \
@@ -65,7 +65,7 @@ class ExternalSync(models.Model):
         from time import time
         start = time()
 
-        if (not schedule.external_disable_sync):
+        if (not schedule.disable_sync):
 
             date_last_sync = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
@@ -88,7 +88,7 @@ class ExternalSync(models.Model):
             _logger.info(u'%s %s', '>>>>>>>>>> Execution time: ', secondsToStr(time() - start))
 
             schedule.date_last_sync = date_last_sync
-            schedule.external_sync_log +=  \
+            schedule.sync_log +=  \
                 'method_args: ' + str(method_args) + '\n' + \
                 'object_count: ' + str(object_count) + '\n' + \
                 'date_last_sync: ' + str(date_last_sync) + '\n' + \
@@ -99,7 +99,7 @@ class ExternalSync(models.Model):
         from time import time
         start = time()
 
-        if (not schedule.external_disable_sync):
+        if (not schedule.disable_sync):
 
             date_last_sync = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
@@ -122,7 +122,7 @@ class ExternalSync(models.Model):
                 external_user,
                 external_user_pw
             )
-            schedule.external_sync_log += 'login_msg: ' + str(login_msg) + '\n\n'
+            schedule.sync_log += 'login_msg: ' + str(login_msg) + '\n\n'
 
             questions = SurveyQuestion.search([('is_page', '!=', True)])
 
@@ -164,7 +164,7 @@ class ExternalSync(models.Model):
             _logger.info(u'%s %s', '>>>>>>>>>> Execution time: ', secondsToStr(time() - start))
 
             schedule.date_last_sync = date_last_sync
-            schedule.external_sync_log +=  \
+            schedule.sync_log +=  \
                 'method_args: ' + str(method_args) + '\n' + \
                 'object_count: ' + str(object_count) + '\n' + \
                 'object_count_2: ' + str(object_count_2) + '\n' + \
@@ -176,7 +176,7 @@ class ExternalSync(models.Model):
         from time import time
         start = time()
 
-        if (not schedule.external_disable_sync):
+        if (not schedule.disable_sync):
 
             date_last_sync = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
@@ -199,7 +199,7 @@ class ExternalSync(models.Model):
                 external_user,
                 external_user_pw
             )
-            schedule.external_sync_log += 'login_msg: ' + str(login_msg) + '\n\n'
+            schedule.sync_log += 'login_msg: ' + str(login_msg) + '\n\n'
 
             labels = SurveyLabel.search([])
 
@@ -240,7 +240,7 @@ class ExternalSync(models.Model):
             _logger.info(u'%s %s', '>>>>>>>>>> Execution time: ', secondsToStr(time() - start))
 
             schedule.date_last_sync = date_last_sync
-            schedule.external_sync_log +=  \
+            schedule.sync_log +=  \
                 'method_args: ' + str(method_args) + '\n' + \
                 'object_count: ' + str(object_count) + '\n' + \
                 'date_last_sync: ' + str(date_last_sync) + '\n' + \
@@ -251,7 +251,7 @@ class ExternalSync(models.Model):
         from time import time
         start = time()
 
-        if (not schedule.external_disable_sync):
+        if (not schedule.disable_sync):
 
             date_last_sync = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
@@ -287,7 +287,7 @@ class ExternalSync(models.Model):
             _logger.info(u'%s %s', '>>>>>>>>>> Execution time: ', secondsToStr(time() - start))
 
             schedule.date_last_sync = date_last_sync
-            schedule.external_sync_log +=  \
+            schedule.sync_log +=  \
                 'method_args: ' + str(method_args) + '\n' + \
                 'object_count: ' + str(object_count) + '\n' + \
                 'date_last_sync: ' + str(date_last_sync) + '\n' + \
@@ -298,7 +298,7 @@ class ExternalSync(models.Model):
         from time import time
         start = time()
 
-        if (not schedule.external_disable_sync):
+        if (not schedule.disable_sync):
 
             date_last_sync = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
@@ -321,7 +321,7 @@ class ExternalSync(models.Model):
                 external_user,
                 external_user_pw
             )
-            schedule.external_sync_log += 'login_msg: ' + str(login_msg) + '\n\n'
+            schedule.sync_log += 'login_msg: ' + str(login_msg) + '\n\n'
 
             user_inputs = SurveyUserInput.search([])
 
@@ -358,7 +358,7 @@ class ExternalSync(models.Model):
             _logger.info(u'%s %s', '>>>>>>>>>> Execution time: ', secondsToStr(time() - start))
 
             schedule.date_last_sync = date_last_sync
-            schedule.external_sync_log +=  \
+            schedule.sync_log +=  \
                 'method_args: ' + str(method_args) + '\n' + \
                 'object_count: ' + str(object_count) + '\n' + \
                 'date_last_sync: ' + str(date_last_sync) + '\n' + \
@@ -369,7 +369,7 @@ class ExternalSync(models.Model):
         from time import time
         start = time()
 
-        if (not schedule.external_disable_sync):
+        if (not schedule.disable_sync):
 
             date_last_sync = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
@@ -392,7 +392,7 @@ class ExternalSync(models.Model):
                 external_user,
                 external_user_pw
             )
-            schedule.external_sync_log += 'login_msg: ' + str(login_msg) + '\n\n'
+            schedule.sync_log += 'login_msg: ' + str(login_msg) + '\n\n'
 
             user_input_lines = SurveyUserInputLine.search([])
 
@@ -426,7 +426,7 @@ class ExternalSync(models.Model):
             _logger.info(u'%s %s', '>>>>>>>>>> Execution time: ', secondsToStr(time() - start))
 
             schedule.date_last_sync = date_last_sync
-            schedule.external_sync_log +=  \
+            schedule.sync_log +=  \
                 'method_args: ' + str(method_args) + '\n' + \
                 'object_count: ' + str(object_count) + '\n' + \
                 'date_last_sync: ' + str(date_last_sync) + '\n' + \
