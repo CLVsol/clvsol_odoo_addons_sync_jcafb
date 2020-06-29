@@ -16,6 +16,7 @@
 	<record id="survey_question_survey_page_template_object_field_title" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;title&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;title&quot;&quot;&quot;"/>
+		<field name="inclusion" eval="True"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_question_survey_page_template"/>
 		<field name="sequence" eval="10"/>
@@ -24,6 +25,7 @@
 	<record id="survey_question_survey_page_template_object_field_code" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;code&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;code&quot;&quot;&quot;"/>
+		<field name="inclusion" eval="True"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_question_survey_page_template"/>
 		<field name="sequence" eval="10"/>

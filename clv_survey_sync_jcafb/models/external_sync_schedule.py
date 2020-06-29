@@ -44,45 +44,8 @@ class ExternalSync(models.Model):
 
                 values = {}
                 values['access_token'] = access_token
-                values['users_login_required'] = True
-                values['is_attempts_limited'] = False
-                values['attempts_limit'] = False
                 survey.write(values)
                 _logger.info(u'%s %s %s', '>>>>>>>>>> survey.title: ', object_count, survey.title)
-
-            _logger.info(u'%s %s', '>>>>>>>>>> date_last_sync: ', date_last_sync)
-            _logger.info(u'%s %s', '>>>>>>>>>> Execution time: ', secondsToStr(time() - start))
-
-            schedule.date_last_sync = date_last_sync
-            schedule.sync_log +=  \
-                'method_args: ' + str(method_args) + '\n' + \
-                'object_count: ' + str(object_count) + '\n' + \
-                'date_last_sync: ' + str(date_last_sync) + '\n' + \
-                'Execution time: ' + str(secondsToStr(time() - start)) + '\n\n'
-
-    def _survey_page_adapt(self, schedule):
-
-        from time import time
-        start = time()
-
-        if (not schedule.disable_sync):
-
-            date_last_sync = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-
-            method_args = literal_eval(schedule.method_args)
-
-            _logger.info(u'%s %s', '>>>>>>>>>> method_args: ', method_args)
-
-            SurveyQuestion = self.env['survey.question']
-            object_count = 0
-
-            questions = SurveyQuestion.search([('survey_id', '!=', False)])
-            for question in questions:
-                object_count += 1
-                values = {}
-                values['is_page'] = True
-                question.write(values)
-                _logger.info(u'%s %s %s', '>>>>>>>>>> question.title: ', object_count, question.title)
 
             _logger.info(u'%s %s', '>>>>>>>>>> date_last_sync: ', date_last_sync)
             _logger.info(u'%s %s', '>>>>>>>>>> Execution time: ', secondsToStr(time() - start))
@@ -171,7 +134,7 @@ class ExternalSync(models.Model):
                 'date_last_sync: ' + str(date_last_sync) + '\n' + \
                 'Execution time: ' + str(secondsToStr(time() - start)) + '\n\n'
 
-    def _survey_label_adapt(self, schedule):
+    def x_survey_label_adapt(self, schedule):
 
         from time import time
         start = time()
@@ -364,7 +327,7 @@ class ExternalSync(models.Model):
                 'date_last_sync: ' + str(date_last_sync) + '\n' + \
                 'Execution time: ' + str(secondsToStr(time() - start)) + '\n\n'
 
-    def _survey_user_input_line_adapt(self, schedule):
+    def x_survey_user_input_line_adapt(self, schedule):
 
         from time import time
         start = time()
