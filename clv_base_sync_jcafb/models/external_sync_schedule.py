@@ -52,6 +52,8 @@ class ExternalSync(models.Model):
             )
             schedule.sync_log += 'login_msg: ' + str(login_msg) + '\n\n'
 
+            object_count = 0
+
             if uid is not False:
 
                 schedule.sync_log += 'Executing: "' + '_res_users_migration' + '"...\n\n'
@@ -63,7 +65,6 @@ class ExternalSync(models.Model):
 
                 _logger.info(u'%s %s\n', '--> remote_objects', len(remote_objects))
 
-                object_count = 0
                 for remote_object in remote_objects:
 
                     object_count += 1

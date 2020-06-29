@@ -7,6 +7,7 @@
 	<record id="clv_phase_clv_phase_template" model="clv.external_sync.template">
 		<field name="name" eval="&quot;&quot;&quot;clv.phase (clv.phase)&quot;&quot;&quot;"/>
 		<field name="model" eval="&quot;&quot;&quot;clv.phase&quot;&quot;&quot;"/>
+		<field name="method_args" eval="&quot;&quot;&quot;{'local_constants': {'active_log': False}}&quot;&quot;&quot;"/>
 		<field name="method" eval="&quot;&quot;&quot;_object_external_sync&quot;&quot;&quot;"/>
 		<field name="external_model" eval="&quot;&quot;&quot;clv.phase&quot;&quot;&quot;"/>
 		<field name="disable_check_missing" eval="True"/>
