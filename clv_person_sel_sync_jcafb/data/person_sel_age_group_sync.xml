@@ -9,7 +9,7 @@
 		<field name="model" eval="&quot;&quot;&quot;clv.person_sel.age_group&quot;&quot;&quot;"/>
 		<field name="method" eval="&quot;&quot;&quot;_object_external_sync&quot;&quot;&quot;"/>
 		<field name="external_model" eval="&quot;&quot;&quot;clv.person_sel.age_group&quot;&quot;&quot;"/>
-		<field name="disable_check_missing" eval="True"/>
+		<field name="enable_check_missing" eval="False"/>
 	</record>
 	 
 	<record id="clv_person_sel_age_group_clv_person_sel_age_group_template_object_field_name" model="clv.external_sync.object_field">

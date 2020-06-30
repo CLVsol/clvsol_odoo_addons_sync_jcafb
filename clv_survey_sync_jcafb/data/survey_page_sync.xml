@@ -10,7 +10,7 @@
 		<field name="method" eval="&quot;&quot;&quot;_object_external_sync&quot;&quot;&quot;"/>
 		<field name="external_model" eval="&quot;&quot;&quot;survey.page&quot;&quot;&quot;"/>
 		<field name="method_args" eval="&quot;&quot;&quot;{'local_constants': {'is_page': True}}&quot;&quot;&quot;"/>
-		<field name="disable_check_missing" eval="True"/>
+		<field name="enable_check_missing" eval="False"/>
 	</record>
 	 
 	<record id="survey_question_survey_page_template_object_field_title" model="clv.external_sync.object_field">

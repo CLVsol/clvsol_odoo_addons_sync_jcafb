@@ -25,7 +25,7 @@ class ExternalSync(models.Model):
         from time import time
         start = time()
 
-        if (not schedule.disable_sync):
+        if (not schedule.enable_sync):
 
             date_last_sync = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 

@@ -9,7 +9,7 @@
 		<field name="model" eval="&quot;&quot;&quot;clv.mfile&quot;&quot;&quot;"/>
 		<field name="method" eval="&quot;&quot;&quot;_object_external_sync&quot;&quot;&quot;"/>
 		<field name="external_model" eval="&quot;&quot;&quot;clv.mfile&quot;&quot;&quot;"/>
-		<field name="disable_check_missing" eval="True"/>
+		<field name="enable_check_missing" eval="False"/>
 		<field name="enable_sequence_code_sync" eval="False"/>
 	</record>
 	 
