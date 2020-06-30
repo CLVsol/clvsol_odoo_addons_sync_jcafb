@@ -10,7 +10,9 @@
 		<field name="method" eval="&quot;&quot;&quot;_survey_user_input_adapt_2&quot;&quot;&quot;"/>
 		<field name="method_args" eval="&quot;&quot;&quot;{}&quot;&quot;&quot;"/>
 		<field name="external_model" eval="&quot;&quot;&quot;-&quot;&quot;&quot;"/>
+		<field name="enable_identification" eval="False"/>
 		<field name="enable_check_missing" eval="False"/>
+		<field name="enable_inclusion" eval="False"/>
 	</record>
 	 
 	<record id="survey_user_input_adapt_2_schedule" model="clv.external_sync.schedule">

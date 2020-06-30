@@ -22,7 +22,6 @@
         # 'data/survey_label_adapt.xml',
         'data/survey_user_input_sync.xml',
         'data/survey_user_input_adapt.xml',
-        # 'data/document_sync_2.xml',
         'data/survey_user_input_line_sync.xml',
         # 'data/survey_user_input_line_adapt.xml',
         'data/survey_page_sync.xml',
