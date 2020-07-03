@@ -8,11 +8,8 @@
 		<field name="name" eval="&quot;&quot;&quot;clv.model_export.document_item (clv.model_export.document_item)&quot;&quot;&quot;"/>
 		<field name="model" eval="&quot;&quot;&quot;clv.model_export.document_item&quot;&quot;&quot;"/>
 		<field name="method" eval="&quot;&quot;&quot;_object_external_sync&quot;&quot;&quot;"/>
-		<!--field name="sequence_model_export_display" eval="&quot;&quot;&quot;clv.export.model_export_display&quot;&quot;&quot;"/-->
 		<field name="external_model" eval="&quot;&quot;&quot;clv.model_export.document_item&quot;&quot;&quot;"/>
-		<!--field name="external_sequence_model_export_display" eval="&quot;&quot;&quot;clv.export.model_export_display&quot;&quot;&quot;"/-->
-		<field name="disable_check_missing" eval="True"/>
-		<!--field name="enable_sequence_model_export_display_sync" eval="True"/-->
+		<field name="enable_check_missing" eval="False"/>
 	</record>
 	 
 	<record id="clv_model_export_document_item_clv_model_export_document_item_template_object_field_sequence" model="clv.external_sync.object_field">

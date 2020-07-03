@@ -11,8 +11,7 @@
 		<field name="sequence_code" eval="&quot;&quot;&quot;clv.export.code&quot;&quot;&quot;"/>
 		<field name="external_model" eval="&quot;&quot;&quot;clv.model_export&quot;&quot;&quot;"/>
 		<field name="sequence_code" eval="&quot;&quot;&quot;clv.export.code&quot;&quot;&quot;"/>
-		<field name="disable_check_missing" eval="True"/>
-		<!--field name="enable_sequence_code_sync" eval="True"/-->
+		<field name="enable_check_missing" eval="False"/>
 	</record>
 	 
 	<record id="clv_model_export_clv_model_export_template_object_field_name" model="clv.external_sync.object_field">
