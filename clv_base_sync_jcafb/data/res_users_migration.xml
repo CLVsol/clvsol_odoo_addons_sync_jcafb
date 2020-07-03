@@ -10,7 +10,9 @@
 		<field name="method" eval="&quot;&quot;&quot;_res_users_migration&quot;&quot;&quot;"/>
 		<field name="method_args" eval="&quot;&quot;&quot;{}&quot;&quot;&quot;"/>
 		<field name="external_model" eval="&quot;&quot;&quot;-&quot;&quot;&quot;"/>
-		<field name="disable_check_missing" eval="True"/>
+		<field name="enable_identification" eval="False"/>
+		<field name="enable_check_missing" eval="False"/>
+		<field name="enable_inclusion" eval="False"/>
 	</record>
 	 
 	<record id="res_users_migration_schedule" model="clv.external_sync.schedule">
