@@ -9,7 +9,7 @@
 		<field name="model" eval="&quot;&quot;&quot;survey.user_input&quot;&quot;&quot;"/>
 		<field name="method" eval="&quot;&quot;&quot;_object_external_sync&quot;&quot;&quot;"/>
 		<field name="external_model" eval="&quot;&quot;&quot;survey.user_input&quot;&quot;&quot;"/>
-		<field name="disable_check_missing" eval="True"/>
+		<field name="enable_check_missing" eval="False"/>
 	</record>
 	 
 	<record id="survey_user_input_survey_user_input_template_object_field_question_ids" model="clv.external_sync.object_field">
@@ -47,7 +47,7 @@
 	</record>
 	 
 	<record id="survey_user_input_survey_user_input_template_object_field_input_type" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;type&quot;&quot;&quot;"/>
+		<field name="external_object_field" eval="&quot;&quot;&quot;input_type&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;input_type&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_user_input_survey_user_input_template"/>

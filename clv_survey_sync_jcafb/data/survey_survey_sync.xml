@@ -9,8 +9,8 @@
 		<field name="model" eval="&quot;&quot;&quot;survey.survey&quot;&quot;&quot;"/>
 		<field name="method" eval="&quot;&quot;&quot;_object_external_sync&quot;&quot;&quot;"/>
 		<field name="external_model" eval="&quot;&quot;&quot;survey.survey&quot;&quot;&quot;"/>
-		<field name="method_args" eval="&quot;&quot;&quot;{'local_constants': {'state': 'open', 'questions_layout': 'page_per_section'}}&quot;&quot;&quot;"/>
-		<field name="disable_check_missing" eval="True"/>
+		<field name="method_args" eval="&quot;&quot;&quot;{}&quot;&quot;&quot;"/>
+		<field name="enable_check_missing" eval="False"/>
 	</record>
 	 
 	<record id="survey_survey_survey_survey_template_object_field_title" model="clv.external_sync.object_field">
@@ -43,14 +43,6 @@
 	<record id="survey_survey_survey_survey_template_object_field_users_login_required" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;users_login_required&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;users_login_required&quot;&quot;&quot;"/>
-		<field name="synchronization" eval="True"/>
-		<field name="template_id" eval="survey_survey_survey_survey_template"/>
-		<field name="sequence" eval="10"/>
-	</record>
-	 
-	<record id="survey_survey_survey_survey_template_object_field_auth_required" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;auth_required&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;auth_required&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_survey_survey_survey_template"/>
 		<field name="sequence" eval="10"/>
@@ -98,15 +90,25 @@
 	</record>
 	 
 	<record id="survey_survey_survey_survey_template_object_field_state" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;state&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;state&quot;&quot;&quot;"/>
-		<field name="adaptation" eval="True"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="survey_survey_survey_survey_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 	 
+	<record id="survey_survey_survey_survey_template_object_field_questions_layout" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;questions_layout&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;questions_layout&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_survey_survey_survey_template"/>
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="survey_survey_survey_survey_template_object_field_questions_layout" model="clv.external_sync.object_field">
-		<field name="local_object_field" eval="&quot;&quot;&quot;questions_layout&quot;&quot;&quot;"/>
-		<field name="adaptation" eval="True"/>
+	<record id="survey_survey_survey_survey_template_object_field_users_login_required" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;users_login_required&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;users_login_required&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_survey_survey_survey_template"/>
 		<field name="sequence" eval="10"/>
 	</record>
