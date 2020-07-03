@@ -9,7 +9,8 @@
 		<field name="model" eval="&quot;&quot;&quot;hr.department&quot;&quot;&quot;"/>
 		<field name="method" eval="&quot;&quot;&quot;_object_external_recognize&quot;&quot;&quot;"/>
 		<field name="external_model" eval="&quot;&quot;&quot;hr.department&quot;&quot;&quot;"/>
-		<field name="disable_check_missing" eval="True"/>
+		<field name="enable_check_missing" eval="False"/>
+		<field name="enable_inclusion" eval="False"/>
 	</record>
 	 
 	<record id="hr_department_hr_department_rec_template_object_field_name" model="clv.external_sync.object_field">
