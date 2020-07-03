@@ -18,7 +18,6 @@
         'data/person_category_sync.xml',
         'data/person_marker_sync.xml',
         'data/person_sync.xml',
-        # 'data/person_sync_2.xml',
     ],
     'demo': [],
     'test': [],
