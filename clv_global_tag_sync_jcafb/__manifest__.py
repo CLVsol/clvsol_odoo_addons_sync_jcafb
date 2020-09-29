@@ -12,7 +12,7 @@
     'website': 'https://github.com/CLVsol',
     'depends': [
         'clv_global_tag',
-        'clv_external_sync',
+        'clv_external_sync_jcafb',
     ],
     'data': [
         'data/global_tag_sync.xml',
