@@ -12,7 +12,7 @@
     'website': 'https://github.com/CLVsol',
     'depends': [
         'clv_employee',
-        'clv_external_sync',
+        'clv_external_sync_jcafb',
     ],
     'data': [
         'data/hr_department_rec.xml',
