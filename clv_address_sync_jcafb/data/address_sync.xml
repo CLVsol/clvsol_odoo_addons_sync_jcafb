@@ -98,9 +98,9 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="clv_address_clv_address_template_object_field_district" model="clv.external_sync.object_field">
+	<record id="clv_address_clv_address_template_object_field_street2" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;district&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;district&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;street2&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="clv_address_clv_address_template"/>
 		<field name="sequence" eval="10"/>
@@ -222,7 +222,7 @@
 	</record>
 	 
 	<record id="clv_external_sync_batch_member_clv_address" model="clv.external_sync.batch.member">
-		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default"/>
+		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default_10"/>
 		<field name="ref_id" ref="clv_address_clv_address_schedule"/>
 	</record>
 	 
