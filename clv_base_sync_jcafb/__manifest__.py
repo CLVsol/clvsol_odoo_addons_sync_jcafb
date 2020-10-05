@@ -16,9 +16,6 @@
     ],
     'data': [
         'data/res_users_migration.xml',
-        # 'data/res_country_sync.xml',
-        # 'data/res_country_state_sync.xml',
-        # 'data/res_city_sync.xml',
         'data/res_users.xml',
     ],
     'demo': [],
