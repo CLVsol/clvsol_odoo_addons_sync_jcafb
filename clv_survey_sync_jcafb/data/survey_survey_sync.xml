@@ -73,13 +73,13 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="survey_survey_survey_survey_template_object_field_thank_you_message" model="clv.external_sync.object_field">
+	<!--record id="survey_survey_survey_survey_template_object_field_thank_you_message" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;thank_you_message&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;thank_you_message&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_survey_survey_survey_template"/>
 		<field name="sequence" eval="10"/>
-	</record>
+	</record-->
 	 
 	<record id="survey_survey_survey_survey_template_object_field_phase_id" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;phase_id&quot;&quot;&quot;"/>
@@ -119,7 +119,7 @@
 	</record>
 	 
 	<record id="clv_external_sync_batch_member_survey_survey" model="clv.external_sync.batch.member">
-		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default"/>
+		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default_10"/>
 		<field name="ref_id" ref="survey_survey_survey_survey_schedule"/>
 	</record>
 	 

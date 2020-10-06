@@ -12,14 +12,10 @@
     'website': 'https://github.com/CLVsol',
     'depends': [
         'base',
-        'clv_l10n_br_base',
-        'clv_external_sync',
+        'clv_external_sync_jcafb',
     ],
     'data': [
         'data/res_users_migration.xml',
-        'data/res_country_sync.xml',
-        'data/res_country_state_sync.xml',
-        'data/res_city_sync.xml',
         'data/res_users.xml',
     ],
     'demo': [],

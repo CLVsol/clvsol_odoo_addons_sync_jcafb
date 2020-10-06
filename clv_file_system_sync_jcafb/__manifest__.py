@@ -12,8 +12,8 @@
     'website': 'https://github.com/CLVsol',
     'depends': [
         'base',
-        'clv_file_system_jcafb',
-        'clv_external_sync',
+        'clv_file_system',
+        'clv_external_sync_jcafb',
     ],
     'data': [
         'data/file_system_directory_sync.xml',
