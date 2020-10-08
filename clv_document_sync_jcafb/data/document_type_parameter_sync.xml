@@ -22,17 +22,17 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="clv_document_type_parameter_clv_document_type_parameter_template_object_field_criterion_code" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;criterion_code&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;criterion_code&quot;&quot;&quot;"/>
+	<record id="clv_document_type_parameter_clv_document_type_parameter_template_object_field_item_code" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;item_code&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;item_code&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="clv_document_type_parameter_clv_document_type_parameter_template"/>
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="clv_document_type_parameter_clv_document_type_parameter_template_object_field_criterion_type" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;criterion_type&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;criterion_type&quot;&quot;&quot;"/>
+	<record id="clv_document_type_parameter_clv_document_type_parameter_template_object_field_item_type" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;item_type&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;item_type&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="clv_document_type_parameter_clv_document_type_parameter_template"/>
 		<field name="sequence" eval="10"/>
