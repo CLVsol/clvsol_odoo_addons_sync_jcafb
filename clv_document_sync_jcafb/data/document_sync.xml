@@ -16,15 +16,6 @@
 		<field name="enable_sequence_code_sync" eval="True"/>
 	</record>
 	 
-	<record id="clv_document_clv_document_template_object_field_name" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;name&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;name&quot;&quot;&quot;"/>
-		<field name="inclusion" eval="True"/>
-		<field name="synchronization" eval="True"/>
-		<field name="template_id" eval="clv_document_clv_document_template"/>
-		<field name="sequence" eval="10"/>
-	</record>
-	 
 	<record id="clv_document_clv_document_template_object_field_code" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;code&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;code&quot;&quot;&quot;"/>
@@ -77,22 +68,6 @@
 	<record id="clv_document_clv_document_template_object_field_date_document" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;date_document&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;date_document&quot;&quot;&quot;"/>
-		<field name="synchronization" eval="True"/>
-		<field name="template_id" eval="clv_document_clv_document_template"/>
-		<field name="sequence" eval="10"/>
-	</record>
-	 
-	<record id="clv_document_clv_document_template_object_field_date_foreseen" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;date_foreseen&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;date_foreseen&quot;&quot;&quot;"/>
-		<field name="synchronization" eval="True"/>
-		<field name="template_id" eval="clv_document_clv_document_template"/>
-		<field name="sequence" eval="10"/>
-	</record>
-	 
-	<record id="clv_document_clv_document_template_object_field_date_deadline" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;date_deadline&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;date_deadline&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="clv_document_clv_document_template"/>
 		<field name="sequence" eval="10"/>
