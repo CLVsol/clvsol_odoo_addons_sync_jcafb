@@ -16,8 +16,6 @@
     ],
     'data': [
         'data/lab_test_unit_sync.xml',
-        'data/lab_test_parasite_sync.xml',
-        'data/lab_test_crystal_sync.xml',
         'data/lab_test_type_sync.xml',
         'data/lab_test_type_parameter_sync.xml',
         'data/lab_test_request_1_sync.xml',
