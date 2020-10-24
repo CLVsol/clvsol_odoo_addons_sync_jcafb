@@ -22,7 +22,7 @@
         'data/lab_test_request_2_sync.xml',
         'data/lab_test_result_1_sync.xml',
         'data/lab_test_report_sync.xml',
-        'data/lab_test_result_2_sync.xml',
+        # 'data/lab_test_result_2_sync.xml',
         'data/lab_test_criterion_1_sync.xml',
         'data/lab_test_criterion_2_sync.xml',
     ],
