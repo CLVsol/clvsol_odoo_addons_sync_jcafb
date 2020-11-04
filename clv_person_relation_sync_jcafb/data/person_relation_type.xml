@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!-- Copyright (C) 2013-Today  Carlos Eduardo Vercelino - CLVsol
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+
+<odoo noupdate="0">
+ 
+	<record id="clv_person_relation_type_responsible" model="clv.person.relation.type">
+		<field name="name" eval="&quot;&quot;&quot;Responsible&quot;&quot;&quot;"/>
+		<field name="name_inverse" eval="&quot;&quot;&quot;Responsible for&quot;&quot;&quot;"/>
+	</record>
+	 
+</odoo>
