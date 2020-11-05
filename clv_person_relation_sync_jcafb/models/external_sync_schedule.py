@@ -66,8 +66,24 @@ class ExternalSync(models.Model):
                 external_object_fields = ['id', 'spouse_id', 'father_id', 'mother_id',
                                           'responsible_id', 'caregiver_id']
 
+                spouse_relation_id = PersonRelationType.search([
+                    ('name', '=', 'Spouse'),
+                ]).id
+
+                father_relation_id = PersonRelationType.search([
+                    ('name', '=', 'Father'),
+                ]).id
+
+                mother_relation_id = PersonRelationType.search([
+                    ('name', '=', 'Mother'),
+                ]).id
+
                 responsible_relation_id = PersonRelationType.search([
                     ('name', '=', 'Responsible'),
+                ]).id
+
+                caregiver_relation_id = PersonRelationType.search([
+                    ('name', '=', 'Caregiver'),
                 ]).id
 
                 for sync_object in sync_objects:
@@ -88,6 +104,54 @@ class ExternalSync(models.Model):
 
                     external_object = external_objects[0]
 
+                    if external_object['spouse_id'] is not False:
+
+                        spouse_sync_object = ExternalSync.search([
+                            ('model', '=', 'clv.person'),
+                            ('external_sync_state', '=', 'synchronized'),
+                            ('external_id', '=', external_object['spouse_id'][0]),
+                        ])
+                        right_person_id = spouse_sync_object.res_id
+                        _logger.info(u'>>>>>>>>>>>>>>> %s %s (%s)', left_person_id, right_person_id, 'Responsible')
+
+                        values = {}
+                        values['left_person_id'] = left_person_id
+                        values['right_person_id'] = right_person_id
+                        values['type_id'] = spouse_relation_id
+                        PersonRelation.create(values)
+
+                    if external_object['father_id'] is not False:
+
+                        father_sync_object = ExternalSync.search([
+                            ('model', '=', 'clv.person'),
+                            ('external_sync_state', '=', 'synchronized'),
+                            ('external_id', '=', external_object['father_id'][0]),
+                        ])
+                        right_person_id = father_sync_object.res_id
+                        _logger.info(u'>>>>>>>>>>>>>>> %s %s (%s)', left_person_id, right_person_id, 'Responsible')
+
+                        values = {}
+                        values['left_person_id'] = left_person_id
+                        values['right_person_id'] = right_person_id
+                        values['type_id'] = father_relation_id
+                        PersonRelation.create(values)
+
+                    if external_object['mother_id'] is not False:
+
+                        mother_sync_object = ExternalSync.search([
+                            ('model', '=', 'clv.person'),
+                            ('external_sync_state', '=', 'synchronized'),
+                            ('external_id', '=', external_object['mother_id'][0]),
+                        ])
+                        right_person_id = mother_sync_object.res_id
+                        _logger.info(u'>>>>>>>>>>>>>>> %s %s (%s)', left_person_id, right_person_id, 'Responsible')
+
+                        values = {}
+                        values['left_person_id'] = left_person_id
+                        values['right_person_id'] = right_person_id
+                        values['type_id'] = mother_relation_id
+                        PersonRelation.create(values)
+
                     if external_object['responsible_id'] is not False:
 
                         responsible_sync_object = ExternalSync.search([
@@ -102,6 +166,22 @@ class ExternalSync(models.Model):
                         values['left_person_id'] = left_person_id
                         values['right_person_id'] = right_person_id
                         values['type_id'] = responsible_relation_id
+                        PersonRelation.create(values)
+
+                    if external_object['caregiver_id'] is not False:
+
+                        caregiver_sync_object = ExternalSync.search([
+                            ('model', '=', 'clv.person'),
+                            ('external_sync_state', '=', 'synchronized'),
+                            ('external_id', '=', external_object['caregiver_id'][0]),
+                        ])
+                        right_person_id = caregiver_sync_object.res_id
+                        _logger.info(u'>>>>>>>>>>>>>>> %s %s (%s)', left_person_id, right_person_id, 'Caaregiver')
+
+                        values = {}
+                        values['left_person_id'] = left_person_id
+                        values['right_person_id'] = right_person_id
+                        values['type_id'] = caregiver_relation_id
                         PersonRelation.create(values)
 
             _logger.info(u'%s %s', '>>>>>>>>>> date_last_sync: ', date_last_sync)
