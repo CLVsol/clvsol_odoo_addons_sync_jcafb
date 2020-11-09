@@ -8,7 +8,8 @@
 		<field name="name" eval="&quot;&quot;&quot;clv.address_aux (clv.address_aux)&quot;&quot;&quot;"/>
 		<field name="model" eval="&quot;&quot;&quot;clv.address_aux&quot;&quot;&quot;"/>
 		<field name="method" eval="&quot;&quot;&quot;_object_external_sync&quot;&quot;&quot;"/>
-		<field name="method_args" eval="&quot;&quot;&quot;{'local_constants': {'active_log': False, 'automatic_set_name': False}}&quot;&quot;&quot;"/>
+		<!--field name="method_args" eval="&quot;&quot;&quot;{'local_constants': {'active_log': False, 'automatic_set_name': False}}&quot;&quot;&quot;"/-->
+		<field name="method_args" eval="&quot;&quot;&quot;{'local_constants': {'active_log': False}}&quot;&quot;&quot;"/>
 		<field name="external_model" eval="&quot;&quot;&quot;clv.address_aux&quot;&quot;&quot;"/>
 		<field name="enable_check_missing" eval="False"/>
 	</record>
@@ -231,8 +232,10 @@
 	</record>
 	 
 	<record id="clv_address_aux_clv_address_aux_template_object_field_automatic_set_name" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;automatic_set_name&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;automatic_set_name&quot;&quot;&quot;"/>
-		<field name="adaptation" eval="True"/>
+		<!--field name="adaptation" eval="True"/-->
+		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="clv_address_aux_clv_address_aux_template"/>
 		<field name="sequence" eval="10"/>
 	</record>
