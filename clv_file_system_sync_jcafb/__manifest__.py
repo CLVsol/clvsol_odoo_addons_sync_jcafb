@@ -16,7 +16,8 @@
         'clv_external_sync_jcafb',
     ],
     'data': [
-        'data/file_system_directory_sync.xml',
+        'data/file_system_directory_rec.xml',
+        # 'data/file_system_directory_sync.xml',
     ],
     'demo': [],
     'test': [],
