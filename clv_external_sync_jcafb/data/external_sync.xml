@@ -24,4 +24,8 @@
 		<field name="name" eval="&quot;&quot;&quot;Default Batch [50]&quot;&quot;&quot;"/>
 	</record>
 	 
+	<record id="clv_external_sync_batch_default_60" model="clv.external_sync.batch">
+		<field name="name" eval="&quot;&quot;&quot;Default Batch [60]&quot;&quot;&quot;"/>
+	</record>
+	 
 </odoo>
