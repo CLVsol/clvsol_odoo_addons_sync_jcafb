@@ -119,17 +119,17 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="clv_person_aux_clv_person_aux_template_object_field_street2" model="clv.external_sync.object_field">
+	<record id="clv_person_aux_clv_person_aux_template_object_field_street_number2" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;street2&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;street2&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;street_number2&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="clv_person_aux_clv_person_aux_template"/>
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="clv_person_aux_clv_person_aux_template_object_field_district" model="clv.external_sync.object_field">
+	<record id="clv_person_aux_clv_person_aux_template_object_field_street2" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;district&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;district&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;street2&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="clv_person_aux_clv_person_aux_template"/>
 		<field name="sequence" eval="10"/>
@@ -263,6 +263,22 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
+	<record id="clv_person_aux_clv_person_aux_template_object_field_date_death" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;date_death&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;date_death&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_aux_clv_person_aux_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="clv_person_aux_clv_person_aux_template_object_field_force_is_deceased" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;force_is_deceased&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;force_is_deceased&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="clv_person_aux_clv_person_aux_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
 	<record id="clv_person_aux_clv_person_aux_template_object_field_gender" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;gender&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;gender&quot;&quot;&quot;"/>
@@ -356,7 +372,7 @@
 	</record>
 	 
 	<record id="clv_external_sync_batch_member_clv_person_aux" model="clv.external_sync.batch.member">
-		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default"/>
+		<field name="external_sync_batch_id" ref="clv_external_sync_jcafb.clv_external_sync_batch_default_10"/>
 		<field name="ref_id" ref="clv_person_aux_clv_person_aux_schedule"/>
 	</record>
 	 

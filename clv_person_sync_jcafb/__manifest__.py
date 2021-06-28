@@ -15,6 +15,7 @@
         'clv_external_sync',
     ],
     'data': [
+        'data/person_age_range.xml',
         'data/person_category_sync.xml',
         'data/person_marker_sync.xml',
         'data/person_sync.xml',

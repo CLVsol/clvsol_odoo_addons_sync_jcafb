@@ -122,17 +122,17 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="clv_person_clv_person_template_object_field_street2" model="clv.external_sync.object_field">
+	<record id="clv_person_clv_person_template_object_field_street_number2" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;street2&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;street2&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;street_number2&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="clv_person_clv_person_template"/>
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="clv_person_clv_person_template_object_field_district" model="clv.external_sync.object_field">
+	<record id="clv_person_clv_person_template_object_field_street2" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;district&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;district&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;street2&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="clv_person_clv_person_template"/>
 		<field name="sequence" eval="10"/>
@@ -261,46 +261,6 @@
 	<record id="clv_person_clv_person_template_object_field_marital" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;marital&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;marital&quot;&quot;&quot;"/>
-		<field name="synchronization" eval="True"/>
-		<field name="template_id" eval="clv_person_clv_person_template"/>
-		<field name="sequence" eval="10"/>
-	</record>
-	 
-	<record id="clv_person_clv_person_template_object_field_spouse_id" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;spouse_id&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;spouse_id&quot;&quot;&quot;"/>
-		<field name="synchronization" eval="True"/>
-		<field name="template_id" eval="clv_person_clv_person_template"/>
-		<field name="sequence" eval="10"/>
-	</record>
-	 
-	<record id="clv_person_clv_person_template_object_field_father_id" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;father_id&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;father_id&quot;&quot;&quot;"/>
-		<field name="synchronization" eval="True"/>
-		<field name="template_id" eval="clv_person_clv_person_template"/>
-		<field name="sequence" eval="10"/>
-	</record>
-	 
-	<record id="clv_person_clv_person_template_object_field_mother_id" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;mother_id&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;mother_id&quot;&quot;&quot;"/>
-		<field name="synchronization" eval="True"/>
-		<field name="template_id" eval="clv_person_clv_person_template"/>
-		<field name="sequence" eval="10"/>
-	</record>
-	 
-	<record id="clv_person_clv_person_template_object_field_responsible_id" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;responsible_id&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;responsible_id&quot;&quot;&quot;"/>
-		<field name="synchronization" eval="True"/>
-		<field name="template_id" eval="clv_person_clv_person_template"/>
-		<field name="sequence" eval="10"/>
-	</record>
-	 
-	<record id="clv_person_clv_person_template_object_field_caregiver_id" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;caregiver_id&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;caregiver_id&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="clv_person_clv_person_template"/>
 		<field name="sequence" eval="10"/>
