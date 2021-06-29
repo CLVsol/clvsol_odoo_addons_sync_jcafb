@@ -5,7 +5,7 @@
 {
     'name': 'Person Relations External Sync (for CLVhealth-JCAFB Solution)',
     'summary': 'Person Relations External Sync Module used in CLVhealth-JCAFB Solution.',
-    'version': '12.0.4.0',
+    'version': '14.0.5.0',
     'author': 'Carlos Eduardo Vercelino - CLVsol',
     'category': 'CLVsol Solutions',
     'license': 'AGPL-3',
@@ -15,8 +15,10 @@
         'clv_external_sync',
     ],
     'data': [
-        'data/person_relation_type.xml',
-        'data/person_relation_setup.xml',
+        # 'data/person_relation_type.xml',
+        # 'data/person_relation_setup.xml',
+        'data/person_relation_type_sync.xml',
+        'data/person_relation_sync.xml',
     ],
     'demo': [],
     'test': [],
