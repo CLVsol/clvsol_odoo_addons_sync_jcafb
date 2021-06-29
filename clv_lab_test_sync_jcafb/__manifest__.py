@@ -5,7 +5,7 @@
 {
     'name': 'Lab Test External Sync (for CLVhealth-JCAFB Solution)',
     'summary': 'Lab Test External Sync Module used in CLVhealth-JCAFB Solution.',
-    'version': '12.0.4.0',
+    'version': '14.0.5.0',
     'author': 'Carlos Eduardo Vercelino - CLVsol',
     'category': 'CLVsol Solutions',
     'license': 'AGPL-3',
@@ -22,7 +22,7 @@
         'data/lab_test_request_2_sync.xml',
         'data/lab_test_result_sync.xml',
         'data/lab_test_report_sync.xml',
-        'data/lab_test_report_updt_result_id.xml',
+        # 'data/lab_test_report_updt_result_id.xml',
         'data/lab_test_criterion_1_sync.xml',
         'data/lab_test_criterion_2_sync.xml',
     ],
