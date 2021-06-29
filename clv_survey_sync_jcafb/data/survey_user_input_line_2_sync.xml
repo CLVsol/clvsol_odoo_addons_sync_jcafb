@@ -5,10 +5,10 @@
 <odoo noupdate="0">
  
 	<record id="survey_user_input_line_survey_user_input_line_2_template" model="clv.external_sync.template">
-		<field name="name" eval="&quot;&quot;&quot;survey.user_input.line (survey.user_input_line) [2]&quot;&quot;&quot;"/>
+		<field name="name" eval="&quot;&quot;&quot;survey.user_input.line (survey.user_input.line) [2]&quot;&quot;&quot;"/>
 		<field name="model" eval="&quot;&quot;&quot;survey.user_input.line&quot;&quot;&quot;"/>
 		<field name="method" eval="&quot;&quot;&quot;_object_external_sync&quot;&quot;&quot;"/>
-		<field name="external_model" eval="&quot;&quot;&quot;survey.user_input_line&quot;&quot;&quot;"/>
+		<field name="external_model" eval="&quot;&quot;&quot;survey.user_input.line&quot;&quot;&quot;"/>
 		<field name="enable_check_missing" eval="False"/>
 	</record>
 	 
@@ -63,7 +63,7 @@
 	</record>
 	 
 	<record id="survey_user_input_line_survey_user_input_line_2_template_object_field_value_char_box" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;value_text&quot;&quot;&quot;"/>
+		<field name="external_object_field" eval="&quot;&quot;&quot;value_char_box&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;value_char_box&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_user_input_line_survey_user_input_line_2_template"/>
@@ -71,7 +71,7 @@
 	</record>
 	 
 	<record id="survey_user_input_line_survey_user_input_line_2_template_object_field_value_numerical_box" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;value_number&quot;&quot;&quot;"/>
+		<field name="external_object_field" eval="&quot;&quot;&quot;value_numerical_box&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;value_numerical_box&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_user_input_line_survey_user_input_line_2_template"/>
@@ -94,16 +94,16 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="survey_user_input_line_survey_user_input_line_2_template_object_field_value_text_box" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;value_free_text&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;value_text_box&quot;&quot;&quot;"/>
+	<record id="survey_user_input_line_survey_user_input_line_2_template_object_field_value_char_box_box" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;value_char_box_box&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;value_char_box_box&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_user_input_line_survey_user_input_line_2_template"/>
 		<field name="sequence" eval="10"/>
 	</record>
 	 
 	<record id="survey_user_input_line_survey_user_input_line_2_template_object_field_suggested_answer_id" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;value_suggested&quot;&quot;&quot;"/>
+		<field name="external_object_field" eval="&quot;&quot;&quot;suggested_answer_id&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;suggested_answer_id&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_user_input_line_survey_user_input_line_2_template"/>
@@ -111,7 +111,7 @@
 	</record>
 	 
 	<record id="survey_user_input_line_survey_user_input_line_2_template_object_field_matrix_row_id" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;value_suggested_row&quot;&quot;&quot;"/>
+		<field name="external_object_field" eval="&quot;&quot;&quot;matrix_row_id&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;matrix_row_id&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_user_input_line_survey_user_input_line_2_template"/>
@@ -119,7 +119,7 @@
 	</record>
 	 
 	<record id="survey_user_input_line_survey_user_input_line_2_schedule" model="clv.external_sync.schedule">
-		<field name="name" eval="&quot;&quot;&quot;survey.user_input.line (survey.user_input_line) [2]&quot;&quot;&quot;"/>
+		<field name="name" eval="&quot;&quot;&quot;survey.user_input.line (survey.user_input.line) [2]&quot;&quot;&quot;"/>
 		<field name="template_id" eval="survey_user_input_line_survey_user_input_line_2_template"/>
 	</record>
 	 

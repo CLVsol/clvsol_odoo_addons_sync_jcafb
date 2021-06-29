@@ -21,7 +21,7 @@
 	</record-->
 	 
 	<record id="survey_user_input_survey_user_input_2_template_object_field_access_token" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;token&quot;&quot;&quot;"/>
+		<field name="external_object_field" eval="&quot;&quot;&quot;access_token&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;access_token&quot;&quot;&quot;"/>
 		<field name="inclusion" eval="True"/>
 		<field name="synchronization" eval="True"/>
