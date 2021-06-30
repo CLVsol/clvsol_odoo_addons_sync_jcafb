@@ -94,9 +94,9 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
-	<record id="survey_user_input_line_survey_user_input_line_2_template_object_field_value_char_box_box" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;value_char_box_box&quot;&quot;&quot;"/>
-		<field name="local_object_field" eval="&quot;&quot;&quot;value_char_box_box&quot;&quot;&quot;"/>
+	<record id="survey_user_input_line_survey_user_input_line_2_template_object_field_value_text_box" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;value_text_box&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;value_text_box&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="survey_user_input_line_survey_user_input_line_2_template"/>
 		<field name="sequence" eval="10"/>
