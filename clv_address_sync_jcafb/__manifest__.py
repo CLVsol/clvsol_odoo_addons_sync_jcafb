@@ -16,6 +16,7 @@
     ],
     'data': [
         'data/address_category_sync.xml',
+        'data/address_marker_sync.xml',
         'data/address_sync.xml',
     ],
     'demo': [],
