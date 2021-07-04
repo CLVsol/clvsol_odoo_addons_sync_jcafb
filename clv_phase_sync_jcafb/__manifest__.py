@@ -16,6 +16,7 @@
     ],
     'data': [
         'data/phase_sync.xml',
+        'data/global_settings_sync.xml',
     ],
     'demo': [],
     'test': [],
