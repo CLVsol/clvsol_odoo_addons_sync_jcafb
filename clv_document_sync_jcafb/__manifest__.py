@@ -17,6 +17,7 @@
     ],
     'data': [
         'data/document_category_sync.xml',
+        'data/document_marker_sync.xml',
         'data/document_type_sync.xml',
         'data/document_type_parameter_sync.xml',
         'data/document_sync.xml',
