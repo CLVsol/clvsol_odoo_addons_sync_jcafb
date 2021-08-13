@@ -21,6 +21,7 @@
         'data/document_type_sync.xml',
         'data/document_type_parameter_sync.xml',
         'data/document_1_sync.xml',
+        'data/document_2_sync.xml',
         'data/document_item_1_sync.xml',
         'data/document_item_2_sync.xml',
     ],
