@@ -102,6 +102,46 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
+	<record id="survey_user_input_survey_user_input_2_template_object_field_ref_id" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;ref_id&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="survey_user_input_survey_user_input_2_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="survey_user_input_survey_user_input_2_template_object_field_parameter_1" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;parameter_1&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;parameter_1&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="survey_user_input_survey_user_input_2_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="survey_user_input_survey_user_input_2_template_object_field_parameter_2" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;parameter_2&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;parameter_2&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="survey_user_input_survey_user_input_2_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="survey_user_input_survey_user_input_2_template_object_field_parameter_3" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;parameter_3&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;parameter_3&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="survey_user_input_survey_user_input_2_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
+	<record id="survey_user_input_survey_user_input_2_template_object_field_parameter_4" model="clv.external_sync.object_field">
+		<field name="external_object_field" eval="&quot;&quot;&quot;parameter_4&quot;&quot;&quot;"/>
+		<field name="local_object_field" eval="&quot;&quot;&quot;parameter_4&quot;&quot;&quot;"/>
+		<field name="synchronization" eval="True"/>
+		<field name="template_id" eval="survey_user_input_survey_user_input_2_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
 	<!--record id="survey_user_input_survey_user_input_2_template_object_field_document_id" model="clv.external_sync.object_field">
 		<field name="external_object_field" eval="&quot;&quot;&quot;document_id&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;document_id&quot;&quot;&quot;"/>
