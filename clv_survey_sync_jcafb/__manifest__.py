@@ -24,6 +24,7 @@
         'data/survey_question_answer_sync.xml',
         # 'data/survey_user_input_1_sync.xml',
         'data/survey_user_input_2_sync.xml',
+        'data/survey_user_input_3_sync.xml',
         # # 'data/document_sync_2.xml',
         # 'data/survey_user_input_line_1_sync.xml',
         'data/survey_user_input_line_2_sync.xml',
