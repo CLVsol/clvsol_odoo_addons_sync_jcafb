@@ -100,7 +100,7 @@
 	</record>
 	 
 	<record id="clv_address_clv_address_template_object_field_street_number2" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;street2&quot;&quot;&quot;"/>
+		<field name="external_object_field" eval="&quot;&quot;&quot;street_number2&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;street_number2&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="clv_address_clv_address_template"/>
@@ -108,7 +108,7 @@
 	</record>
 	 
 	<record id="clv_address_clv_address_template_object_field_street2" model="clv.external_sync.object_field">
-		<field name="external_object_field" eval="&quot;&quot;&quot;district&quot;&quot;&quot;"/>
+		<field name="external_object_field" eval="&quot;&quot;&quot;street2&quot;&quot;&quot;"/>
 		<field name="local_object_field" eval="&quot;&quot;&quot;street2&quot;&quot;&quot;"/>
 		<field name="synchronization" eval="True"/>
 		<field name="template_id" eval="clv_address_clv_address_template"/>
