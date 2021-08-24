@@ -79,6 +79,13 @@
 		<field name="sequence" eval="10"/>
 	</record>
 	 
+	<record id="clv_verification_outcome_clv_verification_outcome_template_object_field_active_log" model="clv.external_sync.object_field">
+		<field name="local_object_field" eval="&quot;&quot;&quot;active_log&quot;&quot;&quot;"/>
+		<field name="adaptation" eval="True"/>
+		<field name="template_id" eval="clv_verification_outcome_clv_verification_outcome_template"/>
+		<field name="sequence" eval="10"/>
+	</record>
+	 
 	<record id="clv_verification_outcome_clv_verification_outcome_schedule" model="clv.external_sync.schedule">
 		<field name="name" eval="&quot;&quot;&quot;clv.verification.outcome (clv.verification.outcome)&quot;&quot;&quot;"/>
 		<field name="template_id" eval="clv_verification_outcome_clv_verification_outcome_template"/>
