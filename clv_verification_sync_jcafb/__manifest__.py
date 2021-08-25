@@ -16,6 +16,7 @@
     ],
     'data': [
         'data/partner_entity_street_pattern_sync.xml',
+        'data/partner_entity_contact_information_pattern_sync.xml',
         'data/verification_marker_sync.xml',
         'data/verification_outcome_sync.xml',
     ],
