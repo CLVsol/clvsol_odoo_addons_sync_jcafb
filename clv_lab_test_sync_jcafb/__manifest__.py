@@ -25,6 +25,7 @@
         # 'data/lab_test_report_updt_result_id.xml',
         'data/lab_test_criterion_1_sync.xml',
         'data/lab_test_criterion_2_sync.xml',
+        'data/lab_test.export_xls_param_sync.xml',
     ],
     'demo': [],
     'test': [],
